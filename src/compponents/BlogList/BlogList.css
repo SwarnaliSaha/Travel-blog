@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+.blog-list-item--image-container {
+  position: relative;
+  cursor: pointer;
+}
+.blog-list-item--image-container:hover .item--image {
+  filter: brightness(0.8) saturate(1.2);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.blog-list--item {
+  margin: 12px !important;
+  padding: 12px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.item--image {
+  width: 400px;
+  height: 300px;
+  transition: all 0.3s ease;
+}
+
+.item--details-container {
+  background-color: white;
+  border-radius: 5px;
+  width: 70%;
+  padding: 12px;
+  position: absolute;
+  top: 70%;
+  left: 11%;
+  max-height: 128px;
+  box-shadow: 1px 2px 8px -1px #b6b6b6;
+  border-radius: 30px;
+  display : flex;
+  justify-content: space-between;
+}
+
+.blog--flag{
+  height : 20px;
+  width : 20px;
+  margin-right : 8px;
+  padding-top : 6px;
+}
+
+.item--location {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.item--description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  color: #666666;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 80%;
+  word-wrap: break-word;
+}
+
+.quote-marks {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top : 54%;
+  left : 71%;
+  z-index : 1;
+}
+
+.quote-marks::after {
+  content: '"';
+  font-size: 150px;
+  color: red;
+  font-family: Arial, sans-serif;
+  transform: rotate(180deg);
+}
+
+.blog-selected {
+  transform: scale(1.1);
+  transition: all 1s ease;
+}

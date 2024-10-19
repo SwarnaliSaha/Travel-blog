@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+.navbar{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 8px 16px;
+    background-color: white;
+}
+
+.item-container{
+    display : flex;
+    justify-content: space-between;
+    /* width : 20% */
+}
+
+.navbar--label{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800; 
+    color: #666666;
+    letter-spacing: 2px;
+}
+.profile{
+    cursor: pointer;
+}

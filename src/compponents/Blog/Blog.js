@@ -23,7 +23,8 @@ export default function Blog() {
       try {
         setLoading(true);
         const data = await blogsService.getBlogs({ id : id });
-        setBlog(data[0]);
+        const blogs = data.blogs;
+        setBlog(blogs[0]);
       } catch (err) {
         setError('Failed to fetch blog data');
         console.error(err);

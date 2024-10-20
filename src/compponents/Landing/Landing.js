@@ -3,14 +3,12 @@ import BlogCardCover from "../BlogCardCover/BlogCardCover";
 import { useNavigate } from "react-router-dom";
 import blogsService from "../blogs-service";
 
-// import { blogs } from "./BlogData";
 import { useEffect, useState } from "react";
 
 export default function LandingPage() {
   const navigate = useNavigate()
 
   const handleBlogExplore = function (blogId) {
-    console.log(blogId)
     navigate(`/blogs/${blogId}`)
   };
 
@@ -18,14 +16,13 @@ export default function LandingPage() {
   useEffect(()=>{
     async function getBlogMetadata(){
       try {
-        const metadata = await blogsService.getBlogs({limit : 5},true)
-        setBlogsMetadata(metadata)
+        const metadata = await blogsService.getBlogs({limit : 3},true)
+        setBlogsMetadata(metadata.blogs)
       } 
       catch (error) {
         console.log("Error in fetching blog metadata details",error)
       }
     }
-
     getBlogMetadata()
   },[])
 

@@ -2,7 +2,7 @@ import blogsData from "./blogs.json";
 
 function getBlogs(queryParams, metadataOnly = false) {
   try {
-    const { limit, offset, ...query } = queryParams;
+    const { limit = 10, offset = 0, ...query } = queryParams;
     
     const numLimit = limit ? parseInt(limit, 10) : undefined;
     const numOffset = offset ? parseInt(offset, 10) : 0;
@@ -26,11 +26,25 @@ function getBlogs(queryParams, metadataOnly = false) {
       }));
     }
 
+    const totalCount = result.length;
+
     if (numOffset || numLimit) {
-      result = result.slice(numOffset, numLimit ? numOffset + numLimit : undefined);
+      result = result.slice(numOffset, numOffset + numLimit);
     }
 
-    return result;
+    
+    let hasNext = true;
+
+    if(numLimit+numOffset > totalCount){
+      hasNext = false;
+    }
+
+    return {
+      blogs : result,
+      hasNext : hasNext,
+      total : totalCount
+    }
+
   } catch (error) {
     console.error("Error in getBlogs:", error);
     throw error;

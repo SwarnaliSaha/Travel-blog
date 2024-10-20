@@ -169,5 +169,347 @@
             ] 
           }
         ]
+      },
+      {
+        "id" : "1",
+        "author": "Swarnali Saha",
+        "location": "India",
+        "image": {
+          "path": "https://cdn.pixabay.com/photo/2018/02/25/21/34/temple-3181803_1280.jpg",
+          "label": "Old Buildings, India"
+        },
+        "intro":
+          "India is a diverse and vibrant country located in South Asia, known for its rich cultural heritage, historical significance, and geographical variety. It is the seventh-largest country by land area and the second-most populous, with over a billion people representing a multitude of languages, religions, and ethnic groups.Culturally, India is known for its festivals, such as Diwali, Holi, and Eid, and for its classical music, dance forms, and art. The country is also famous for its cuisine, which varies widely by region and includes a rich array of spices and flavors.Economically, India is one of the fastest-growing major economies, with a mix of traditional and modern industries. It is a hub for technology and innovation, particularly in cities like Bangalore and Hyderabad.",
+        "label": "India - you beauty !",
+        "labelForPlacesToVisit": "Must visit places in India",
+        "placesToVisit": [
+          {
+            "location": "Kolkata",
+            "label": "Kolkata - The City of Joy !",
+            "images": [
+              {
+                "path": "https://cdn.pixabay.com/photo/2022/08/25/15/44/rowing-7410640_1280.jpg",
+                "label": "Howrah Bridge, Kolkata"
+              },
+              {
+                "path": "https://cdn.pixabay.com/photo/2022/08/30/15/08/palace-7421313_1280.jpg",
+                "label": "Architectural site, Kolkata"
+              }
+            ],
+            "description":
+              "Kolkata is often regarded as the cultural capital of India. It has a thriving arts scene, with numerous theaters, galleries, and festivals celebrating literature, music, and dance. The city is home to iconic figures like Rabindranath Tagore and Satyajit Ray, contributing to its reputation as a center for literature and cinema.",
+            "labelForHotspots": "Take a look !",
+            "hotspots": [
+              {
+                "location": "Victoria Memorial",
+                "images": [
+                  {
+                    "path": "https://cdn.pixabay.com/photo/2017/06/12/08/29/victoria-memorial-2394784_1280.jpg",
+                    "label": "Victoria Memorial, Kolkata"
+                  },
+                  {
+                    "path": "https://cdn.pixabay.com/photo/2020/12/28/23/03/victoria-memorial-5868794_1280.jpg",
+                    "label": "Victoria Memorial, Kolkata"
+                  }
+                ],
+                "description":
+                  "The Victoria Memorial is an iconic monument located in Kolkata, India. Built between 1906 and 1921, it was commissioned to honor Queen Victoria, the Empress of India, following her death in 1901. The memorial is a stunning example of Indo-Saracenic architecture, blending elements of British and Indian styles."
+              },
+              {
+                "location": "Howrah Bridge",
+                "images": [
+                  {
+                    "path": "https://media.istockphoto.com/id/1164386039/photo/howrah-bridge-on-river-ganges-at-kolkata-at-twilight-with-moody-sky.jpg?s=2048x2048&w=is&k=20&c=yyLWm_OAuiWhvOh52WPNj2X0hGbe-rWik_TC5ECnXS0=",
+                    "label": "Howrah Bridge"
+                  }
+                ],
+                "description":
+                  "The bridge is renowned for its unique cantilever design, featuring a steel framework that provides both strength and flexibility. It has a total length of about 705 meters (2,313 feet) and is one of the longest bridges of its type in the world.The bridge has no nuts or bolts; its design consists of riveted steel plates that contribute to its structural integrity. The main span is supported by large, prominent arches that give it a distinctive silhouette."
+              },
+              {
+                "location": "North Calcutta",
+                "images": [
+                  {
+                    "path": "https://cdn.pixabay.com/photo/2017/06/22/16/16/budgebudge-ferry-ghut-2431352_1280.jpg",
+                    "label": "Bagbazar Ghat, North Calcutta"
+                  },
+                  {
+                    "path": "https://cdn.pixabay.com/photo/2022/09/23/06/15/water-7473754_1280.jpg",
+                    "label": "Ferri Ghat, Kolkata"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "location": "New Delhi",
+            "images": [
+              {
+                "path": "https://cdn.pixabay.com/photo/2019/03/09/14/18/india-4044210_1280.jpg",
+                "label": "Architectural Site, New Delhi"
+              },
+              {
+                "path": "https://cdn.pixabay.com/photo/2020/02/04/20/27/delhi-4819243_1280.jpg",
+                "label": "Jama Masjid Tower, New Delhi"
+              }
+            ],
+            "description":
+              "New Delhi, the capital of India, is a bustling metropolis that serves as the political, cultural, and administrative heart of the country. It was officially designated as the capital in 1931 during British rule, designed by architects Edwin Lutyens and Herbert Baker as part of the larger plan for the city of Delhi.New Delhi is known for its grand colonial architecture, with notable structures such as the Rashtrapati Bhavan (Presidential Palace), Parliament House, and India Gate. These landmarks reflect a mix of Indian and Western architectural styles.",
+            "labelForHotspots": "Don't forget to visit these places in Delhi !",
+            "hotspots": [
+              {
+                "location": "Taj Mahal, Agra",
+                "images": [
+                  {
+                    "path": "https://cdn.pixabay.com/photo/2020/06/05/21/09/cultural-tourism-5264542_1280.jpg",
+                    "label": "Taj Mahal, Agra, India"
+                  }
+                ],
+                "description":
+                  "The Taj Mahal is renowned for its stunning Mughal architecture, which combines elements of Persian, Islamic, and Indian styles. It is primarily constructed from white Makrana marble that reflects different hues depending on the time of day and the angle of sunlight.The central dome, rising to about 35 meters (115 feet), is surrounded by four smaller domes and is flanked by intricate minarets at each corner, adding to its grandeur."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "author": "Swarnali Saha",
+        "location": "Paris",
+        "label" : "Love, Paris",
+        "image":{
+          "path" : "https://media.istockphoto.com/id/1364380431/photo/the-eiffel-tower-from-the-river-seine-in-paris.jpg?s=2048x2048&w=is&k=20&c=97fEWbTwVrSvyWMjXzUGLO59FwMdKVgYRPGi-cvH_bE=",
+          "label" : "love, Paris"
+        }, 
+        "intro": "Paris, the capital of France, is renowned for its art, fashion, and culture. It is a city that offers a blend of historic architecture and modern attractions.",
+        "labelForPlacesToVisit": "Must visit places in Paris",
+        "placesToVisit": [
+          {
+            "location": "Eiffel Tower",
+            "label" : "The center of attraction - Eiffel Tower",
+            "description": "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris. Standing at 1,083 feet, it offers breathtaking views of the city from its observation decks.",
+            "images":[
+              {
+                "path" : "https://cdn.pixabay.com/photo/2015/10/06/18/26/eiffel-tower-975004_1280.jpg",
+                "label" : "Eiffel Tower"
+              }
+            ]
+          },
+          {
+            "location": "Louvre Museum",
+            "description": "The Louvre is the world's largest art museum and a historic monument in Paris. It houses thousands of works of art, including the famous Mona Lisa and the Venus de Milo.",
+            "images":[
+              {
+                "path" : "https://cdn.pixabay.com/photo/2013/04/11/19/46/building-102840_1280.jpg",
+                "label" : "Louvre Museum"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "author" : "Arka Saha",
+        "location": "New York",
+        "label" : "Oh! NYC",
+        "image":{
+          "path" : "https://cdn.pixabay.com/photo/2020/05/04/13/30/outdoors-5129182_1280.jpg",
+          "label" : "New York City"
+        },
+        "intro": "New York City, known as 'The Big Apple,' is famous for its skyline and vibrant culture. From Broadway shows to iconic landmarks, there's something for everyone in this bustling metropolis.",
+        "labelForPlacesToVisit": "Must visit places in New York",
+        "placesToVisit": [
+          {
+            "location": "Statue of Liberty",
+            "description": "The Statue of Liberty is a symbol of freedom and democracy. Gifted by France, it stands on Liberty Island and has welcomed millions of immigrants arriving by sea.",
+            "images":[
+              {
+                "path" : "https://cdn.pixabay.com/photo/2022/09/07/12/07/the-statue-of-liberty-7438652_1280.jpg",
+                "label" : "Status Of Liberty, New York"
+              }
+            ] 
+          },
+          {
+            "location": "Central Park",
+            "description": "Central Park is a massive park in the heart of Manhattan. It offers a serene escape from the city's hustle and bustle with walking paths, lakes, and beautiful gardens.",
+            "images":[
+              {
+                "path" : "https://cdn.pixabay.com/photo/2015/05/01/15/09/central-park-748629_1280.jpg",
+                "label" : "Central Park, New York"
+              }
+            ] 
+          }
+        ]
+      },
+      {
+        "id" : "1",
+        "author": "Swarnali Saha",
+        "location": "India",
+        "image": {
+          "path": "https://cdn.pixabay.com/photo/2018/02/25/21/34/temple-3181803_1280.jpg",
+          "label": "Old Buildings, India"
+        },
+        "intro":
+          "India is a diverse and vibrant country located in South Asia, known for its rich cultural heritage, historical significance, and geographical variety. It is the seventh-largest country by land area and the second-most populous, with over a billion people representing a multitude of languages, religions, and ethnic groups.Culturally, India is known for its festivals, such as Diwali, Holi, and Eid, and for its classical music, dance forms, and art. The country is also famous for its cuisine, which varies widely by region and includes a rich array of spices and flavors.Economically, India is one of the fastest-growing major economies, with a mix of traditional and modern industries. It is a hub for technology and innovation, particularly in cities like Bangalore and Hyderabad.",
+        "label": "India - you beauty !",
+        "labelForPlacesToVisit": "Must visit places in India",
+        "placesToVisit": [
+          {
+            "location": "Kolkata",
+            "label": "Kolkata - The City of Joy !",
+            "images": [
+              {
+                "path": "https://cdn.pixabay.com/photo/2022/08/25/15/44/rowing-7410640_1280.jpg",
+                "label": "Howrah Bridge, Kolkata"
+              },
+              {
+                "path": "https://cdn.pixabay.com/photo/2022/08/30/15/08/palace-7421313_1280.jpg",
+                "label": "Architectural site, Kolkata"
+              }
+            ],
+            "description":
+              "Kolkata is often regarded as the cultural capital of India. It has a thriving arts scene, with numerous theaters, galleries, and festivals celebrating literature, music, and dance. The city is home to iconic figures like Rabindranath Tagore and Satyajit Ray, contributing to its reputation as a center for literature and cinema.",
+            "labelForHotspots": "Take a look !",
+            "hotspots": [
+              {
+                "location": "Victoria Memorial",
+                "images": [
+                  {
+                    "path": "https://cdn.pixabay.com/photo/2017/06/12/08/29/victoria-memorial-2394784_1280.jpg",
+                    "label": "Victoria Memorial, Kolkata"
+                  },
+                  {
+                    "path": "https://cdn.pixabay.com/photo/2020/12/28/23/03/victoria-memorial-5868794_1280.jpg",
+                    "label": "Victoria Memorial, Kolkata"
+                  }
+                ],
+                "description":
+                  "The Victoria Memorial is an iconic monument located in Kolkata, India. Built between 1906 and 1921, it was commissioned to honor Queen Victoria, the Empress of India, following her death in 1901. The memorial is a stunning example of Indo-Saracenic architecture, blending elements of British and Indian styles."
+              },
+              {
+                "location": "Howrah Bridge",
+                "images": [
+                  {
+                    "path": "https://media.istockphoto.com/id/1164386039/photo/howrah-bridge-on-river-ganges-at-kolkata-at-twilight-with-moody-sky.jpg?s=2048x2048&w=is&k=20&c=yyLWm_OAuiWhvOh52WPNj2X0hGbe-rWik_TC5ECnXS0=",
+                    "label": "Howrah Bridge"
+                  }
+                ],
+                "description":
+                  "The bridge is renowned for its unique cantilever design, featuring a steel framework that provides both strength and flexibility. It has a total length of about 705 meters (2,313 feet) and is one of the longest bridges of its type in the world.The bridge has no nuts or bolts; its design consists of riveted steel plates that contribute to its structural integrity. The main span is supported by large, prominent arches that give it a distinctive silhouette."
+              },
+              {
+                "location": "North Calcutta",
+                "images": [
+                  {
+                    "path": "https://cdn.pixabay.com/photo/2017/06/22/16/16/budgebudge-ferry-ghut-2431352_1280.jpg",
+                    "label": "Bagbazar Ghat, North Calcutta"
+                  },
+                  {
+                    "path": "https://cdn.pixabay.com/photo/2022/09/23/06/15/water-7473754_1280.jpg",
+                    "label": "Ferri Ghat, Kolkata"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "location": "New Delhi",
+            "images": [
+              {
+                "path": "https://cdn.pixabay.com/photo/2019/03/09/14/18/india-4044210_1280.jpg",
+                "label": "Architectural Site, New Delhi"
+              },
+              {
+                "path": "https://cdn.pixabay.com/photo/2020/02/04/20/27/delhi-4819243_1280.jpg",
+                "label": "Jama Masjid Tower, New Delhi"
+              }
+            ],
+            "description":
+              "New Delhi, the capital of India, is a bustling metropolis that serves as the political, cultural, and administrative heart of the country. It was officially designated as the capital in 1931 during British rule, designed by architects Edwin Lutyens and Herbert Baker as part of the larger plan for the city of Delhi.New Delhi is known for its grand colonial architecture, with notable structures such as the Rashtrapati Bhavan (Presidential Palace), Parliament House, and India Gate. These landmarks reflect a mix of Indian and Western architectural styles.",
+            "labelForHotspots": "Don't forget to visit these places in Delhi !",
+            "hotspots": [
+              {
+                "location": "Taj Mahal, Agra",
+                "images": [
+                  {
+                    "path": "https://cdn.pixabay.com/photo/2020/06/05/21/09/cultural-tourism-5264542_1280.jpg",
+                    "label": "Taj Mahal, Agra, India"
+                  }
+                ],
+                "description":
+                  "The Taj Mahal is renowned for its stunning Mughal architecture, which combines elements of Persian, Islamic, and Indian styles. It is primarily constructed from white Makrana marble that reflects different hues depending on the time of day and the angle of sunlight.The central dome, rising to about 35 meters (115 feet), is surrounded by four smaller domes and is flanked by intricate minarets at each corner, adding to its grandeur."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "author": "Swarnali Saha",
+        "location": "Paris",
+        "label" : "Love, Paris",
+        "image":{
+          "path" : "https://media.istockphoto.com/id/1364380431/photo/the-eiffel-tower-from-the-river-seine-in-paris.jpg?s=2048x2048&w=is&k=20&c=97fEWbTwVrSvyWMjXzUGLO59FwMdKVgYRPGi-cvH_bE=",
+          "label" : "love, Paris"
+        }, 
+        "intro": "Paris, the capital of France, is renowned for its art, fashion, and culture. It is a city that offers a blend of historic architecture and modern attractions.",
+        "labelForPlacesToVisit": "Must visit places in Paris",
+        "placesToVisit": [
+          {
+            "location": "Eiffel Tower",
+            "label" : "The center of attraction - Eiffel Tower",
+            "description": "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris. Standing at 1,083 feet, it offers breathtaking views of the city from its observation decks.",
+            "images":[
+              {
+                "path" : "https://cdn.pixabay.com/photo/2015/10/06/18/26/eiffel-tower-975004_1280.jpg",
+                "label" : "Eiffel Tower"
+              }
+            ]
+          },
+          {
+            "location": "Louvre Museum",
+            "description": "The Louvre is the world's largest art museum and a historic monument in Paris. It houses thousands of works of art, including the famous Mona Lisa and the Venus de Milo.",
+            "images":[
+              {
+                "path" : "https://cdn.pixabay.com/photo/2013/04/11/19/46/building-102840_1280.jpg",
+                "label" : "Louvre Museum"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "author" : "Arka Saha",
+        "location": "New York",
+        "label" : "Oh! NYC",
+        "image":{
+          "path" : "https://cdn.pixabay.com/photo/2020/05/04/13/30/outdoors-5129182_1280.jpg",
+          "label" : "New York City"
+        },
+        "intro": "New York City, known as 'The Big Apple,' is famous for its skyline and vibrant culture. From Broadway shows to iconic landmarks, there's something for everyone in this bustling metropolis.",
+        "labelForPlacesToVisit": "Must visit places in New York",
+        "placesToVisit": [
+          {
+            "location": "Statue of Liberty",
+            "description": "The Statue of Liberty is a symbol of freedom and democracy. Gifted by France, it stands on Liberty Island and has welcomed millions of immigrants arriving by sea.",
+            "images":[
+              {
+                "path" : "https://cdn.pixabay.com/photo/2022/09/07/12/07/the-statue-of-liberty-7438652_1280.jpg",
+                "label" : "Status Of Liberty, New York"
+              }
+            ] 
+          },
+          {
+            "location": "Central Park",
+            "description": "Central Park is a massive park in the heart of Manhattan. It offers a serene escape from the city's hustle and bustle with walking paths, lakes, and beautiful gardens.",
+            "images":[
+              {
+                "path" : "https://cdn.pixabay.com/photo/2015/05/01/15/09/central-park-748629_1280.jpg",
+                "label" : "Central Park, New York"
+              }
+            ] 
+          }
+        ]
       }
 ]

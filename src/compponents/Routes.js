@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import LandingPage from "./Landing/Landing";
 import Blogs from "./Blogs/Blogs";
+import Blog from "./Blog/Blog";
 
 export default function StaticRoutes() {
   const routes = [
@@ -9,9 +10,13 @@ export default function StaticRoutes() {
       component: <LandingPage />,
     },
     {
-        path : "/blogs/:id",
+        path : "/blogs",
         component : <Blogs />
-    }
+    },
+    {
+      path : "/blogs/:id",
+      component : <Blog />
+  }
   ];
   return (
     <Routes>

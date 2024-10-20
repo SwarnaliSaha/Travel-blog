@@ -14,7 +14,86 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 
-export default function Filters({facets,handleFiltering}) {
+export default function Filters() {
+  let facets = [
+    {
+      id: "1",
+      label: "Places",
+      multiSelect: true,
+      filters: [
+        {
+          id: "2",
+          label: "Paris",
+        },
+        {
+          id: "3",
+          label: "India",
+        },
+        {
+          id: "4",
+          label: "New York",
+        },
+        {
+          id: "5",
+          label: "Rome",
+        },
+        {
+          id: "6",
+          label: "London",
+        },
+      ],
+    },
+    {
+      id: "7",
+      label: "Contributors/Authors",
+      filters: [
+        {
+          id: "8",
+          label: "Swarnali Saha",
+        },
+        {
+          id: "9",
+          label: "Arka Saha",
+        },
+        {
+          id: "10",
+          label: "Swarnali Saha",
+        },
+        {
+          id: "11",
+          label: "Arka Saha",
+        },
+      ],
+    },
+    {
+        id: "12",
+        label: "Places",
+        multiSelect: true,
+        filters: [
+          {
+            id: "13",
+            label: "Paris",
+          },
+          {
+            id: "14",
+            label: "India",
+          },
+          {
+            id: "15",
+            label: "New York",
+          },
+          {
+            id: "16",
+            label: "Rome",
+          },
+          {
+            id: "17",
+            label: "London",
+          },
+        ],
+      },
+  ];
+
   const [appliedFilters, setAppliedFilters] = useState([]);
 
   function onSelectionUpdate(selectedItem) {
@@ -60,7 +139,7 @@ export default function Filters({facets,handleFiltering}) {
       }
     }
 
-    handleFiltering(appliedFilters)
+    // handleFiltering(appliedFilters)
   }
 
   function clearSelections(facetId) {

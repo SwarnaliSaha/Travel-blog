@@ -82,6 +82,7 @@
 
 .card-media--container {
   position: relative !important;
+  flex : 1;
 }
 
 .location-images {

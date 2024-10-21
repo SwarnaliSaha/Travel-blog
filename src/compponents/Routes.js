@@ -5,8 +5,12 @@ import Blog from "./Blog/Blog";
 
 export default function StaticRoutes() {
   const routes = [
+    // {
+    //   path: "/Travel-blog",
+    //   component: <LandingPage />,
+    // },
     {
-      path: "/Travel-blog",
+      path: "/",
       component: <LandingPage />,
     },
     {

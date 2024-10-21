@@ -8,11 +8,14 @@ function getBlogs(queryParams, metadataOnly = false) {
     const numOffset = offset ? parseInt(offset, 10) : 0;
 
     const filteredBlogs = blogsData.filter((blog) => {
-      return Object.entries(query).every(
-        ([key, value]) => blog[key] === value
-      );
+      return Object.entries(query).every(([key, value]) => {
+        if (Array.isArray(value)) {
+          return value.includes(blog[key]);
+        } else {
+          return blog[key] === value;
+        }
+      });
     });
-
     let result = filteredBlogs;
 
     if (metadataOnly) {
@@ -33,10 +36,10 @@ function getBlogs(queryParams, metadataOnly = false) {
     }
 
     
-    let hasNext = true;
+    let hasNext = false;
 
-    if(numLimit+numOffset > totalCount){
-      hasNext = false;
+    if(numLimit+numOffset < totalCount){
+      hasNext = true;
     }
 
     return {

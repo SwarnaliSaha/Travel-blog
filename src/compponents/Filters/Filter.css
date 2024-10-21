@@ -3,14 +3,10 @@
     max-height: 100%;
     overflow-y: auto !important;
 }
-.facets-container{
-    padding : 16px;
-}
-
 .facet--card{
     display: flex;
     flex-direction: column;
-    padding-bottom : 8px;
+    border-bottom: 1px solid #dcdcdc;
 
 }
 
@@ -20,14 +16,14 @@
 }
 
 .facets-container .facet--content{
-    padding-bottom : 8px !important;
-    padding-top : 0 !important;
+    padding: 0 !important;
 }
 
 .facet--actions{
     display : flex;
     justify-content: space-between;
     padding : 0 16px;
+    padding-bottom : 8px;
 }
 
 .all-facets--action{
@@ -39,4 +35,8 @@
     background-color: white;
     border : 1px solid #dcdcdc;
     border-radius : 4px;
+}
+
+.facet--filter-container{
+    padding : 0 16px !important;
 }

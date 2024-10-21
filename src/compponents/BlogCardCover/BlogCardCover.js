@@ -7,7 +7,6 @@ import {
   Box,
   Button
 } from "@mui/material";
-import Carousel from "react-material-ui-carousel";
 
 export default function BlogCardCover({items,handleBlogExplore}) {
   const itemsPerSlide = 3;
@@ -43,6 +42,7 @@ export default function BlogCardCover({items,handleBlogExplore}) {
                 }px) / ${itemsPerSlide})`,
               }}
               className="individual-item--card"
+              onClick={() => onBlogExpore(item.id)}
             >
               <div className="image-container">
               <CardMedia component="img" image={item.image.path} />

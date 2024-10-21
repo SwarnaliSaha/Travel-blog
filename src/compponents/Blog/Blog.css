@@ -73,7 +73,7 @@
 .group-box {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 28px;
 }
 
 .card--single-spot {

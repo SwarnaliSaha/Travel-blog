@@ -89,7 +89,7 @@ export default function Blog() {
                         place.images.length % 2 !== 0 &&
                         imgIndex === place.images.length - 1
                           ? "100%"
-                          : "calc(50% - 8px)",
+                          : "calc(48.5% - 1px)",
                     }}
                     className="card-media--container"
                   >

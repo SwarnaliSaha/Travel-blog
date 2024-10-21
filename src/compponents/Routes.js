@@ -6,7 +6,7 @@ import Blog from "./Blog/Blog";
 export default function StaticRoutes() {
   const routes = [
     {
-      path: "/",
+      path: "/Travel-blog",
       component: <LandingPage />,
     },
     {

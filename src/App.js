@@ -15,7 +15,7 @@ function App() {
     {
       id: "1",
       label: "Home",
-      path: "/",
+      path: "/Travel-blog",
     },
     {
       id: "2",

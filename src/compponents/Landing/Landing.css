@@ -1,33 +1,28 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-.landing-page--main-container{
-    /* background-image: url("https://cdn.pixabay.com/photo/2023/06/14/23/12/sunset-8064078_1280.jpg");
+.landing-page--main-container {
+  /* background-image: url("https://cdn.pixabay.com/photo/2023/06/14/23/12/sunset-8064078_1280.jpg");
     background-size: cover; */
-    /* height : 100vh;
+  /* height : 100vh;
     width : 100vw; */
-    /* object-fit: cover; */
-    
+  /* object-fit: cover; */
 }
 
-.navbar{
-    position: fixed; 
-    top: 0;          
-    left: 0;
-    width: 100%;
-    z-index: 999; 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
-.cover-image-container{
-    height : 70vh;
-    width : 100%;
+.cover-image-container {
+  height: 70vh;
+  width: 100%;
 }
 
-.cover-image{
-    width : 100%;
-    height : 100%;
-}
-
-.blog-cards-container{
-    padding: 16px;
+.cover-image {
+  width: 100%;
+  height: 100%;
 }

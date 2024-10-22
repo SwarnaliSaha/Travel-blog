@@ -6,25 +6,24 @@ import blogsService from "../blogs-service";
 import { useEffect, useState } from "react";
 
 export default function LandingPage() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleBlogExplore = function (blogId) {
-    navigate(`/blogs/${blogId}`)
+    navigate(`/blogs/${blogId}`);
   };
 
-  const [blogsMetadata,setBlogsMetadata] = useState([])
-  useEffect(()=>{
-    async function getBlogMetadata(){
+  const [blogsMetadata, setBlogsMetadata] = useState([]);
+  useEffect(() => {
+    async function getBlogMetadata() {
       try {
-        const metadata = await blogsService.getBlogs({limit : 3},true)
-        setBlogsMetadata(metadata.blogs)
-      } 
-      catch (error) {
-        console.log("Error in fetching blog metadata details",error)
+        const metadata = await blogsService.getBlogs({ limit: 3 }, true);
+        setBlogsMetadata(metadata.blogs);
+      } catch (error) {
+        console.log("Error in fetching blog metadata details", error);
       }
     }
-    getBlogMetadata()
-  },[])
+    getBlogMetadata();
+  }, []);
 
   return (
     <div className="landing-page--main-container">
@@ -36,10 +35,11 @@ export default function LandingPage() {
             className="cover-image"
           />
         </div>
-        {/* <div className="blog-cards-container"> */}
-          <BlogCardCover items={blogsMetadata} handleBlogExplore={handleBlogExplore} />
-        {/* </div> */}
-        <div>nlsrchg</div>
+
+        <BlogCardCover
+          items={blogsMetadata}
+          handleBlogExplore={handleBlogExplore}
+        />
       </div>
     </div>
   );

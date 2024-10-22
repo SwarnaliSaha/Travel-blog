@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import LandingPage from "./Landing/Landing";
 import Blogs from "./Blogs/Blogs";
 import Blog from "./Blog/Blog";
+import About from "./About/About";
 
 export default function StaticRoutes() {
   const routes = [
@@ -12,6 +13,10 @@ export default function StaticRoutes() {
     {
       path: "/",
       component: <LandingPage />,
+    },
+    {
+      path : "/about",
+      component : <About />
     },
     {
         path : "/blogs",

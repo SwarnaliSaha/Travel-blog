@@ -8,6 +8,9 @@ import Navbar from "./compponents/Navbar/Navbar";
 import StaticRoutes from "./compponents/Routes";
 import { useState } from "react";
 
+import { Provider } from 'react-redux';
+import store from './redux/store';
+
 const theme = createTheme();
 
 function App() {
@@ -18,33 +21,27 @@ function App() {
       path: "/",
     },
     {
-      id: "2",
-      label: "About",
-      path: "/about",
-    },
-    {
-      id: 3,
+      id: 2,
       label: "Blogs",
       path: "/blogs",
     },
     {
-      id: "4",
-      label: "Contact Us",
-      path: "/contact",
+      id: "3",
+      label: "About & Contact",
+      path: "/about",
     },
+
   ];
-  const handleSearch = function () {
-    console.log("searched");
-  };
+  
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <ThemeProvider theme={theme}>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
       <div>
         <Router>
           <Navbar
             items={navbarElements}
-            handleInpuChange={handleSearch}
             className="navbar"
             activeTab={activeTab}
             setActiveTab={setActiveTab}
@@ -55,6 +52,7 @@ function App() {
         </Router>
       </div>
     </ThemeProvider>
+    </Provider>   
   );
 }
 

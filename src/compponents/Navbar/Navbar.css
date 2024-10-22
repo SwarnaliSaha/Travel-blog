@@ -11,7 +11,6 @@
 .item-container{
     display : flex;
     justify-content: space-between;
-    /* width : 20% */
 }
 
 .navbar--label{

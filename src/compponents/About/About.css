@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+.about-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.about-container .sub-sections {
+  margin-bottom: 16px;
+}
+.about-container .image-section {
+  display: flex;
+  gap: 16px;
+}
+
+.about-container .image-section .display--card-media {
+  width: 49%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.about-container .abous-us--container {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+}
+
+.about-container .about-us--image {
+  width: 49% !important;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.about-container .about-us--header-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-container .about-us--header {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
+  font-size: 1.5rem;
+}
+
+.about-container .about-us--description {
+  font-family: monospace !important;
+  font-size: 1.5rem;
+}
+
+.about-container .explore-blogs-button {
+  width: 50%;
+}
+
+.about-container .carousels-box {
+  display: flex;
+  margin: 16px;
+  gap: 16px;
+}
+
+.about-container .carousel--card {
+  flex: 0 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  padding: 16px;
+  background-color: #f5e7d5 !important;
+}
+
+.about-container .carousel--image {
+  width: 50% !important;
+  border-radius: 4px;
+}
+
+.about-container .choose-us--header {
+  padding-left: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 1.5rem !important;
+}
+
+.about-container .carousel--card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-container .carousel-item--label {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 600 !important;
+  color: #666666 !important;
+  line-height: 1.6 !important;
+}
+.about-container .carousel-item--description {
+  font-weight: normal;
+  font-size: 1rem;
+  color: #666666 !important;
+}
+
+.about-container .contact-details--container {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.about-container .contact-details {
+  display: flex;
+  gap: 10px;
+  padding-left: 16px;
+}
+
+.about-container .contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  gap: 10px;
+}

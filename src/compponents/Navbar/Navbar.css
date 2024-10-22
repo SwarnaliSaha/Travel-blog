@@ -8,17 +8,20 @@
     background-color: white;
 }
 
-.item-container{
+.navbar .item-container{
     display : flex;
     justify-content: space-between;
 }
 
-.navbar--label{
+.navbar .navbar--label{
     font-family: 'Open Sans', sans-serif;
     font-weight: 800; 
     color: #666666;
     letter-spacing: 2px;
 }
-.profile{
+.navbar .profile{
     cursor: pointer;
+}
+.navbar .search-icon--disabled{
+    opacity: 0.5 !important;
 }

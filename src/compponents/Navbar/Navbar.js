@@ -49,12 +49,13 @@ useEffect(()=>{
             input: {
               startAdornment: (
                 <InputAdornment position="start">
-                  <SearchIcon />
+                  <SearchIcon className={activeTab !==1 ? 'search-icon--disabled' : ''}/>
                 </InputAdornment>
               ),
             },
           }}
           onChange={handleInpuChange}
+          disabled={activeTab !=1}
         />
       </div>
       <div className="profile">

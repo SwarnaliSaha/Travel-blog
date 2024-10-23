@@ -2,7 +2,7 @@ import blogsData from "./blogs.json";
 
 function getBlogs(queryParams, metadataOnly = false) {
   try {
-    const { limit = 10, offset = 0, ...query } = queryParams;
+    const { limit = 10, offset = 0, searchedBlog = null, ...query } = queryParams;
     
     const numLimit = limit ? parseInt(limit, 10) : undefined;
     const numOffset = offset ? parseInt(offset, 10) : 0;
@@ -16,7 +16,12 @@ function getBlogs(queryParams, metadataOnly = false) {
         }
       });
     });
+
     let result = filteredBlogs;
+
+    if(searchedBlog){
+      result = filteredBlogs.filter(blog => blog.label?.toLowerCase().includes(searchedBlog))
+    }
 
     if (metadataOnly) {
       result = result.map((blog) => ({

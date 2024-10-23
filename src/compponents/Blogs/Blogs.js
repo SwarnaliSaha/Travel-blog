@@ -1,4 +1,4 @@
-import { useParams, useNavigate, useLocation } from "react-router-dom";
+import { useParams, useNavigate, useLocation,useSearchParams  } from "react-router-dom";
 import { useEffect, useState } from "react";
 import blogsService from "../blogs-service";
 import {
@@ -33,6 +33,8 @@ export default function Blogs() {
   const [error, setError] = useState(null);
   const [filters, setFilters] = useState({});
 
+  const [searchParams,setSearchParams] = useSearchParams();
+
   const limit = 6;
 
   const query = useQuery();
@@ -45,16 +47,19 @@ export default function Blogs() {
       setCurrentPage(page);
       fetchBlogs();
     }
-  }, [currentPage, id, filters]);
+  }, [currentPage, id, filters , searchParams]);
 
   async function fetchBlogs() {
     try {
       setLoading(true);
       let offset = (currentPage - 1) * limit;
+      let searchedTerm = searchParams.get("search");
+
       const queryParams = {
         limit: limit,
         offset: offset,
         ...filters,
+        searchedBlog : searchedTerm
       };
       const { blogs, hasNext } = await blogsService.getBlogs(queryParams, true);
       setBlogs(blogs);
@@ -72,10 +77,10 @@ export default function Blogs() {
   }
 
   function handlePagination(newPage) {
+    const newSearchParams = new URLSearchParams(searchParams);
+    newSearchParams.set('page', newPage.toString());
     setCurrentPage(newPage);
-    navigate(`?page=${newPage}`);
-    // const filterQuery = new URLSearchParams(filters).toString();
-    // navigate(`?page=${newPage}&${filterQuery}`);
+    setSearchParams(newSearchParams);
   }
 
   //Build facets array by calling blogs (metadata only) api once
@@ -121,11 +126,22 @@ export default function Blogs() {
       );
     }
 
-    // const filterQueryString = new URLSearchParams(filterQueryObject).toString();
+    const newSearchParams = new URLSearchParams(searchParams);
+    Object.entries(filterQueryObject).forEach(([key, values]) => {
+      newSearchParams.delete(key);
+      if (Array.isArray(values)) {
+        values.forEach(value => newSearchParams.append(key, value));
+      } else {
+        newSearchParams.set(key, values);
+      }
+    });
+
+    newSearchParams.set('page', '1');
+    
     setFilters(filterQueryObject);
     setCurrentPage(1);
-    navigate(`?page=${1}`);
-    // navigate(`?page=${1}&${filterQueryString}`);
+    
+    setSearchParams(newSearchParams);
   }
 
   function handleReset(){

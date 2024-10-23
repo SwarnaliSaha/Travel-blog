@@ -6,17 +6,32 @@ import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import { Tabs } from '@mui/material';
 import Tab from '@mui/material/Tab';
-import { useNavigate,useLocation } from 'react-router-dom';
+import { useNavigate,useLocation,useSearchParams} from 'react-router-dom';
 
-export default function Navbar({ items,handleInpuChange, activeTab, setActiveTab}) {
+export default function Navbar({ items,activeTab, setActiveTab}) {
 
 const navigate = useNavigate()
-const location = useLocation()
+const location = useLocation();
 
 const handleTabChange = function(event, newValue){
   setActiveTab(newValue);
     navigate(items[newValue].path)
 
+}
+const [searchParams,setSearchParams] = useSearchParams();
+
+const handleSearch = function(e){
+  const searchedTerm = e.target.value;
+  const updatedSearchParams = new URLSearchParams(searchParams);
+
+  if(searchedTerm.trim()){
+    updatedSearchParams.set("search",searchedTerm)
+  }
+  else{
+    updatedSearchParams.delete("search")
+  }
+
+  setSearchParams(updatedSearchParams);
 }
 
 useEffect(()=>{
@@ -54,7 +69,7 @@ useEffect(()=>{
               ),
             },
           }}
-          onChange={handleInpuChange}
+          onChange={handleSearch}
           disabled={activeTab !=1}
         />
       </div>

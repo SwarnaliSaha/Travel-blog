@@ -8,8 +8,8 @@ import Navbar from "./compponents/Navbar/Navbar";
 import StaticRoutes from "./compponents/Routes";
 import { useState } from "react";
 
-import { Provider } from 'react-redux';
-import store from './redux/store';
+// import { Provider } from 'react-redux';
+// import store from './redux/store';
 
 const theme = createTheme();
 
@@ -36,7 +36,7 @@ function App() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <Provider store={store}>
+    // <Provider store={store}>
       <ThemeProvider theme={theme}>
       <div>
         <Router>
@@ -52,7 +52,7 @@ function App() {
         </Router>
       </div>
     </ThemeProvider>
-    </Provider>   
+    // </Provider>   
   );
 }
 

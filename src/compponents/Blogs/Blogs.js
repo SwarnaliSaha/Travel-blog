@@ -49,7 +49,6 @@ export default function Blogs() {
 
   async function fetchBlogs() {
     try {
-      console.log("fetch blogs called");
       setLoading(true);
       let offset = (currentPage - 1) * limit;
       const queryParams = {
@@ -155,7 +154,7 @@ export default function Blogs() {
         <Grid2 container spacing={4}>
           {blogs.map((blog, index) => {
             return (
-              <Grid2 size={4} key={index}>
+              <Grid2 key={index} size={{s:12, md: 6, lg: 4 }}>
                 <Card raised className="blog-card" onClick={() => onBlogExpore(blog.id)}>
                   <CardMedia
                     component="img"

@@ -25,3 +25,13 @@
 .image-container{
     position: relative;
 }
+
+@media (max-width: 910px) {
+    .groupbox-container {
+      flex-direction: column;
+    }
+    .individual-item--card{
+        width : 100% !important;
+    }
+  }
+  

@@ -176,7 +176,7 @@ export default function Blogs() {
                       color="warning"
                       onClick={() => onBlogExpore(blog.id)}
                     >
-                      Explore Now
+                      Explore
                     </Button>
                   </CardContent>
                 </Card>

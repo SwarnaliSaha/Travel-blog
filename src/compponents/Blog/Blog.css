@@ -58,9 +58,8 @@
 }
 
 .spot--header .MuiCardHeader-title {
-  font-family: "Dancing Script", cursive;
-  font-size: 2rem;
-  font-weight: 800;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
   color: #333;
 }
 
@@ -97,12 +96,40 @@
   top: 100%;
   left: 50%;
   transform: translate(-50%, 0);
-  font-family: "Dancing Script", cursive !important;
-  font-size: 1rem !important;
-  font-weight: 800 !important;
+  font-size: 10px !important;
   color: #ed6c02 !important;
 }
 
 .card-content {
+  display: flex;
+  flex-direction: column;
   margin-top: 16px !important;
+}
+
+@media (max-width: 1226px) {
+  .blog-container{
+    width : 100%;
+  }
+  .group-box {
+    flex-direction: column;
+  }
+
+  .card-media--container {
+    width: 100% !important;
+  }
+
+  .image--label{
+    left : 0;
+    transform: translate(1%,0)
+  }
+}
+
+@media (max-width: 410px) {
+  .blog-container{
+    width : 100%;
+    padding : 0;
+  }
+  .card-content{
+    padding : 0 !important;
+  }
 }

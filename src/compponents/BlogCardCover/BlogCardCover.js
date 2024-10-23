@@ -46,7 +46,7 @@ export default function BlogCardCover({items,handleBlogExplore}) {
             >
               <div className="image-container">
               <CardMedia component="img" image={item.image.path} />
-              <Button className="explore-button" variant="contained" color="warning" onClick={() => onBlogExpore(item.id)}>Explore Now</Button>
+              <Button className="explore-button" variant="contained" color="warning" onClick={() => onBlogExpore(item.id)}>Explore</Button>
               </div>
               <CardContent
                 sx={{

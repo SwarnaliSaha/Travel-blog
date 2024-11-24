@@ -90,10 +90,7 @@ export default function Filters({ facets, handleApplyFilters,handleReset}) {
                           control={
                             <Checkbox
                               checked={
-                                appliedFilters
-                                  .find((filter) => filter.facetId === facet.id)
-                                  ?.selections.some((f) => f.id === item.id) ||
-                                false
+                                item.isSelected
                               }
                             />
                           }

@@ -98,6 +98,7 @@ export default function Blogs() {
   useEffect(() => {
     async function getFacets() {
       let facets = [];
+
       let blogMetadata = await blogsService.getBlogs({}, true);
       let facetId = 1;
 
@@ -109,14 +110,19 @@ export default function Blogs() {
           filters: [],
           multiSelect: true,
         };
-        facet.filters = [...new Set(blogMetadata.blogs?.map(element => element[facetLabel.label]))].map((label, index) => ({ id: index + 200, label }));
+        facet.filters = [...new Set(blogMetadata.blogs?.map(element => element[facetLabel.label]))].map((label, index) => ({ id: index + 200, label, isSelected : isAlreadySelected(label,facetLabel.label)}));
         facets.push(facet);
         facetId++;
       }
       setFacets(facets);
     }
     getFacets();
-  }, []);
+  }, [searchParams]);
+
+  function isAlreadySelected(item,label){
+    let routerFilters = searchParams.getAll(label)
+    if(routerFilters.includes(item)) return true;
+  }
 
   function handleApplyFilters(appliedFilters) {
     let filterQueryObject = {};
@@ -139,6 +145,7 @@ export default function Blogs() {
     newSearchParams.set('page', '1');
     
     setFilters(filterQueryObject);
+    console.log(filterQueryObject)
     setCurrentPage(1);
     
     setSearchParams(newSearchParams);
